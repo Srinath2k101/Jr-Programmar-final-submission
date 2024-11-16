@@ -11,6 +11,7 @@ public class Boss : MonoBehaviour
     public int power = 10;
     public TextMeshProUGUI hpText;
     public TextMeshProUGUI pwrText;
+    public TextMeshProUGUI titleText;
 
     public float shakeDuration = 0.5f;
     public float shakeMagnitude = 0.1f;
@@ -31,6 +32,7 @@ public class Boss : MonoBehaviour
     {
         hpText.text = $"HP: {health}";
         pwrText.text = $"PWR: {power}";
+        titleText.text = "Boss";
     }
 
     private IEnumerator Attack()

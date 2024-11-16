@@ -11,6 +11,7 @@ public abstract class Hero : MonoBehaviour
     public int power;
     public TextMeshProUGUI hpText;
     public TextMeshProUGUI pwrText;
+    public TextMeshProUGUI titleText;
 
     public float shakeDuration = 0.5f;
     public float shakeMagnitude = 0.1f;
@@ -30,6 +31,7 @@ public abstract class Hero : MonoBehaviour
     {
         hpText.text = $"HP: {health}";
         pwrText.text = $"PWR: {power}";
+        titleText.text = characterType.ToString();
     }
 
     public void SelectHero()
